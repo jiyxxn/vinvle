@@ -1,0 +1,271 @@
+body {
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.box1 {
+  position: relative;
+  clear: both;
+  width: 1920px;
+  height: 714px;
+  margin-bottom: 50px;
+
+}
+
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1600px;
+    height: 140px;
+    z-index: 9999;
+
+    display: flex;
+    flex-flow: row wrap; /* 헤더 여백, 링크, 로고, 여백 나열 */
+  }
+
+    header a,.menu_bar span {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 550;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: #333;
+      transition: all 0.3s;
+    }
+
+    header a:hover,.menu_bar span:hover {
+      color: #A5A3A1;
+      transition: all 0.3s;
+    }
+
+
+    /* 양쪽 여백 제외 헤더 그룹 */
+    .top_contents {
+      width: 1300px;
+      height: 90px;
+      
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      /* background-color: blue; */
+      
+    }
+
+      .top_left, .top_right {
+        width: 200px;
+        text-align: center;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top_left {
+        margin-left: 50px;
+      }
+
+      .top_right {
+        width: 350px;
+      }
+
+      .blank {
+        width: 300px;
+        height: 90px;
+        /* background-color: pink; */
+      }
+
+      .logo span {
+        position: absolute;
+        left: 850px;
+        top: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+      }
+
+      .top_right input {
+        /* width: 120px; */
+        height: 25px;
+        font-size: 9pt;
+        font-family: 'Montserrat', sans-serif;
+        padding-left: 10px;
+        border: solid #33333365 1px;
+        border-radius: 5px;
+      }
+
+      /* 메인 이미지 */
+      .main_img {
+        width: 100vw;
+        height: 100vh;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(./../images/main_img.jpg) no-repeat;
+        z-index: 1;
+      }
+
+      .menu_bar {
+        position: relative;
+        clear: both;
+        z-index: 990;
+        width: 1100px;
+        height: 30px;
+        margin: 0 auto;
+        /* background-color: pink; */
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+       /* 메뉴 텍스트 정렬 */
+        .menu_bar span {
+          text-align: center;
+        }
+
+
+
+  .sub_title, .sub_title_2 {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #3c3c3c;
+  }
+
+    .sub_title_2 {
+      height: 80px;
+      /* background-color: aqua; */
+    }
+
+  .box2 {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    /* background-color: #333; */
+  
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+    .product_box {
+      width: 1200px;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+    }
+
+    
+    .section_row {
+      width: 1200px;
+      height: 700px;
+      margin: 0 auto;
+      /* background-color: pink; */
+      
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+
+
+    .row_images {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+      .color_row {
+        width: 350px;
+        display: flex;
+        flex-flow: row nowrap;
+        
+        margin-top: 15px;
+      }
+
+        .color_row img{
+          margin-right: 3px;
+        }
+
+        .color_row img:last-child {
+          margin-right: 0px;
+          /* 불필요한 마진 제거 */
+        }
+
+
+
+      .product_text {
+        width: 350px;
+        margin-top: 10px;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+      }
+
+      .product_text span {
+        font-size: 13px;
+        font-weight: 600;
+        color: #333;
+        letter-spacing: 0.5px;
+      }
+
+
+      .price_text > span, .color_text > span{
+        width: 350px;
+        height: 20px;
+        line-height: 20px;
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        letter-spacing: 0.5px;        
+        font-size: 12px;
+      }
+
+        .color_text > span {
+          font-size: 10px;
+          font-weight: 600;
+        }
+
+        .price_text > span {
+          margin-top: 5px;
+        }
+
+      .etc_text > span {
+        font-size: 10px;
+        font-weight: 600;
+      }
+
+
+      .icon_row {
+        width: 385px;
+        margin-top: 15px;
+        /* background-color: pink; */
+        display: flex;
+        flex-flow: row nowrap;
+      }
+
+          .icon_row > img {
+            margin-right: 5px;
+          }
+
+          .icon_row > img:last-child {
+            margin-right: 0px;
+          } /*불필요한 마진 제거*/
+
